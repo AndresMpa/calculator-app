@@ -1,0 +1,21 @@
+{
+  "name": "calculator-app",
+  "version": "1.0.0",
+  "description": "A simple calculator app",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "dev": "npx live-server"
+  },
+  "keywords": [
+    "calculator"
+  ],
+  "author": "AndresMpa",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.69.0"
+  }
+}
