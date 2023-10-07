@@ -13,5 +13,68 @@
     <link rel="stylesheet" href="./src/style/main.css" />
     <title>Calculator app</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <article class="calc">
+        <!--title + theme-->
+        <h1 class="calc--title">calc</h1>
+        <h3 class="calc--subtitle">THEME</h3>
+        <div class="calc--switcher">
+          <input
+            id="theme-1"
+            type="radio"
+            name="theme"
+            checked="checked"
+            class="calc--switcher--input"
+          />
+          <label for="theme-1"></label>
+          <input
+            checked=""
+            id="theme-2"
+            type="radio"
+            name="theme"
+            class="calc--switcher--input"
+          />
+          <label for="theme-2"></label>
+          <input
+            checked=""
+            id="theme-2"
+            type="radio"
+            name="theme"
+            class="calc--switcher--input"
+          />
+          <label for="theme-3"></label>
+        </div>
+      </article>
+      <article class="results">
+        <!--Results-->
+        <p class="results--value">399,981</p>
+      </article>
+      <article class="numpad">
+        <!--Numpad + Buttons-->
+        <button class="numpad--button">7</button>
+        <button class="numpad--button">8</button>
+        <button class="numpad--button">9</button>
+        <button class="numpad--control">DEL</button>
+
+        <button class="numpad--button">4</button>
+        <button class="numpad--button">5</button>
+        <button class="numpad--button">6</button>
+        <button class="numpad--button">+</button>
+
+        <button class="numpad--button">1</button>
+        <button class="numpad--button">2</button>
+        <button class="numpad--button">3</button>
+        <button class="numpad--button">-</button>
+
+        <button class="numpad--button">.</button>
+        <button class="numpad--button">0</button>
+        <button class="numpad--button">/</button>
+        <button class="numpad--button">x</button>
+
+        <button class="numpad--control">RESET</button>
+        <button class="numpad--eval">=</button>
+      </article>
+    </main>
+  </body>
 </html>
