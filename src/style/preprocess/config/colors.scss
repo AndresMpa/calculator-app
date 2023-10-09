@@ -1,3 +1,4 @@
+/* Theme One */
 $mainBackground: hsl(222, 26%, 31%);
 $keypadBackground: hsl(223, 31%, 20%);
 $screenBackground: hsl(224, 36%, 15%);
@@ -5,14 +6,55 @@ $screenBackground: hsl(224, 36%, 15%);
 $toggleBackground: hsl(223, 31%, 20%);
 $toggle: hsl(6, 63%, 50%);
 
-$darkBlueKeyBackground: hsl(225, 21%, 49%);
-$darkBlueKeyShadow: hsl(224, 28%, 35%);
+$controlKeyBackground: hsl(225, 21%, 49%);
+$controlKeyShadow: hsl(224, 28%, 35%);
 
-$redKeyShadow: hsl(6, 70%, 34%);
-$redKeyBackground: hsl(6, 63%, 50%);
+$equalKeyShadow: hsl(6, 70%, 34%);
+$equalKeyBackground: hsl(6, 63%, 50%);
 
-$grayishKeyBackground: hsl(30, 25%, 89%);
-$grayishKeyShadow: hsl(28, 16%, 65%);
+$buttonKeyBackground: hsl(30, 25%, 89%);
+$buttonKeyShadow: hsl(28, 16%, 65%);
 
-$darkBlue: hsl(221, 14%, 31%);
-$white: hsl(0, 0%, 100%);
+$darkText: hsl(221, 14%, 31%);
+$whiteText: hsl(0, 0%, 100%);
+
+/* Theme Two */
+$mainBackground: hsl(0, 0%, 90%);
+$keypadBackground: hsl(0, 5%, 81%);
+$screenBackground: hsl(0, 0%, 93%);
+
+$toggleBackground: hsl(0, 5%, 81%);
+$toggle: hsl(25, 98%, 40%);
+
+$controlKeyBackground: hsl(185, 42%, 37%);
+$controlKeyShadow: hsl(185, 58%, 25%);
+
+$equalKeyBackground: hsl(25, 98%, 40%);
+$equalKeyShadow: hsl(25, 99%, 27%);
+
+$buttonKeyBackground: hsl(45, 7%, 89%);
+$buttonKeyShadow: hsl(35, 11%, 61%);
+
+$darkText: hsl(60, 10%, 19%);
+$whiteText: hsl(0, 0%, 100%);
+
+/* Theme 3 */
+$mainBackground: hsl(268, 75%, 9%);
+$keypadBackground: hsl(268, 71%, 12%);
+$screenBackground: hsl(268, 71%, 12%);
+
+$toggleBackground: hsl(268, 71%, 12%);
+$toggle: hsl(176, 100%, 44%);
+
+$controlKeyBackground: hsl(281, 89%, 26%);
+$controlKeyShadow: hsl(285, 91%, 52%);
+
+$equalKeyBackground: hsl(176, 100%, 44%);
+$equalKeyShadow: hsl(177, 92%, 70%);
+
+$buttonKeyBackground: hsl(268, 47%, 21%);
+$buttonKeyShadow: hsl(290, 70%, 36%);
+
+$softText: hsl(52, 100%, 62%);
+$darkText: hsl(198, 20%, 13%);
+$whiteText: hsl(0, 0%, 100%);
