@@ -10,8 +10,9 @@
   --controlKeyBackground: hsl(225, 21%, 49%);
   --controlKeyShadow: hsl(224, 28%, 35%);
 
-  --equalKeyShadow: hsl(6, 70%, 34%);
   --equalKeyBackground: hsl(6, 63%, 50%);
+  --equalKeyShadow: hsl(6, 70%, 34%);
+  --equalText: hsl(0, 0%, 100%);
 
   --buttonKeyBackground: hsl(30, 25%, 89%);
   --buttonKeyShadow: hsl(28, 16%, 65%);
@@ -33,6 +34,7 @@
 
   --equalKeyBackground: hsl(25, 98%, 40%);
   --equalKeyShadow: hsl(25, 99%, 27%);
+  --equalText: hsl(0, 0%, 100%);
 
   --buttonKeyBackground: hsl(45, 7%, 89%);
   --buttonKeyShadow: hsl(35, 11%, 61%);
@@ -54,11 +56,32 @@
 
   --equalKeyBackground: hsl(176, 100%, 44%);
   --equalKeyShadow: hsl(177, 92%, 70%);
+  --equalText: hsl(52, 100%, 62%);
 
   --buttonKeyBackground: hsl(268, 47%, 21%);
   --buttonKeyShadow: hsl(290, 70%, 36%);
 
-  --softText: hsl(52, 100%, 62%);
   --darkText: hsl(198, 20%, 13%);
   --whiteText: hsl(0, 0%, 100%);
 }
+
+$mainBackground: var(--mainBackground);
+$keypadBackground: var(--keypadBackground);
+
+$screenBackground: var(--screenBackground);
+
+$toggleBackground: var(--toggleBackground);
+$toggle: var(--toggle);
+
+$controlKeyBackground: var(--controlKeyBackground);
+$controlKeyShadow: var(--controlKeyShadow);
+
+$equalKeyBackground: var(--equalKeyBackground);
+$equalKeyShadow: var(--equalKeyShadow);
+$equalText: var(--equalText);
+
+$buttonKeyBackground: var(--buttonKeyBackground);
+$buttonKeyShadow: var(--buttonKeyShadow);
+
+$darkText: var(--darkText);
+$whiteText: var(--whiteText);
