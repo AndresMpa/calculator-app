@@ -1,0 +1,21 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  overflow-anchor: none;
+}
+
+ul,
+ol,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+html,
+body {
+  display: flex;
+  height: 100vh;
+  place-content: center;
+  background-color: $main;
+}
