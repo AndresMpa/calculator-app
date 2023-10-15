@@ -1,27 +1,5 @@
-:root[data-theme="light"] {
+:root {
   /* Theme One */
-  --mainBackground: hsl(222, 26%, 31%);
-  --keypadBackground: hsl(223, 31%, 20%);
-  --screenBackground: hsl(224, 36%, 15%);
-
-  --toggleBackground: hsl(223, 31%, 20%);
-  --toggle: hsl(6, 63%, 50%);
-
-  --controlKeyBackground: hsl(225, 21%, 49%);
-  --controlKeyShadow: hsl(224, 28%, 35%);
-
-  --equalKeyBackground: hsl(6, 63%, 50%);
-  --equalKeyShadow: hsl(6, 70%, 34%);
-  --equalText: hsl(0, 0%, 100%);
-
-  --buttonKeyBackground: hsl(30, 25%, 89%);
-  --buttonKeyShadow: hsl(28, 16%, 65%);
-
-  --darkText: hsl(221, 14%, 31%);
-  --whiteText: hsl(0, 0%, 100%);
-}
-:root[data-theme="dark"] {
-  /* Theme Two */
   --mainBackground: hsl(0, 0%, 90%);
   --keypadBackground: hsl(0, 5%, 81%);
   --screenBackground: hsl(0, 0%, 93%);
@@ -42,8 +20,32 @@
   --darkText: hsl(60, 10%, 19%);
   --whiteText: hsl(0, 0%, 100%);
 }
+
+:root[data-theme="light"] {
+  /* Theme Two */
+  --mainBackground: hsl(222, 26%, 31%);
+  --keypadBackground: hsl(223, 31%, 20%);
+  --screenBackground: hsl(224, 36%, 15%);
+
+  --toggleBackground: hsl(223, 31%, 20%);
+  --toggle: hsl(6, 63%, 50%);
+
+  --controlKeyBackground: hsl(225, 21%, 49%);
+  --controlKeyShadow: hsl(224, 28%, 35%);
+
+  --equalKeyBackground: hsl(6, 63%, 50%);
+  --equalKeyShadow: hsl(6, 70%, 34%);
+  --equalText: hsl(0, 0%, 100%);
+
+  --buttonKeyBackground: hsl(30, 25%, 89%);
+  --buttonKeyShadow: hsl(28, 16%, 65%);
+
+  --darkText: hsl(221, 14%, 31%);
+  --whiteText: hsl(0, 0%, 100%);
+}
+
 :root[data-theme="retro"] {
-  /* Theme 3 */
+  /* Theme Three */
   --mainBackground: hsl(268, 75%, 9%);
   --keypadBackground: hsl(268, 71%, 12%);
   --screenBackground: hsl(268, 71%, 12%);
@@ -65,23 +67,23 @@
   --whiteText: hsl(0, 0%, 100%);
 }
 
-$mainBackground: var(--mainBackground);
-$keypadBackground: var(--keypadBackground);
+$main-background: var(--mainBackground);
+$keypad-background: var(--keypadBackground);
 
-$screenBackground: var(--screenBackground);
+$screen-background: var(--screenBackground);
 
-$toggleBackground: var(--toggleBackground);
+$toggle-background: var(--toggleBackground);
 $toggle: var(--toggle);
 
-$controlKeyBackground: var(--controlKeyBackground);
-$controlKeyShadow: var(--controlKeyShadow);
+$control-key-background: var(--controlKeyBackground);
+$control-key-shadow: var(--controlKeyShadow);
 
-$equalKeyBackground: var(--equalKeyBackground);
-$equalKeyShadow: var(--equalKeyShadow);
-$equalText: var(--equalText);
+$equal-key-background: var(--equalKeyBackground);
+$equal-key-shadow: var(--equalKeyShadow);
+$equal-text: var(--equalText);
 
-$buttonKeyBackground: var(--buttonKeyBackground);
-$buttonKeyShadow: var(--buttonKeyShadow);
+$button-key-background: var(--buttonKeyBackground);
+$button-key-shadow: var(--buttonKeyShadow);
 
-$darkText: var(--darkText);
-$whiteText: var(--whiteText);
+$dark-text: var(--darkText);
+$white-text: var(--whiteText);
