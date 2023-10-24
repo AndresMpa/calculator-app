@@ -1,23 +1,5 @@
 :root {
-  /* Theme One (Light) */
-  --main-background: hsl(0, 0%, 90%);
-  --keypad-background: hsl(0, 5%, 81%);
-  --screen-background: hsl(0, 0%, 93%);
-  --toggle-background: hsl(0, 5%, 81%);
-  --toggle: hsl(25, 98%, 40%);
-  --control-key-background: hsl(185, 42%, 37%);
-  --control-key-shadow: hsl(185, 58%, 25%);
-  --equal-key-background: hsl(25, 98%, 40%);
-  --equal-key-shadow: hsl(25, 99%, 27%);
-  --equal-text: hsl(0, 0%, 100%);
-  --button-key-background: hsl(45, 7%, 89%);
-  --button-key-shadow: hsl(35, 11%, 61%);
-  --dark-text: hsl(60, 10%, 19%);
-  --white-text: hsl(0, 0%, 100%);
-}
-
-:root[data-theme=light] {
-  /* Theme Two (dark) */
+  /* Default theme (dark) */
   --main-background: hsl(222, 26%, 31%);
   --keypad-background: hsl(223, 31%, 20%);
   --screen-background: hsl(224, 36%, 15%);
@@ -31,6 +13,24 @@
   --button-key-background: hsl(30, 25%, 89%);
   --button-key-shadow: hsl(28, 16%, 65%);
   --dark-text: hsl(221, 14%, 31%);
+  --white-text: hsl(0, 0%, 100%);
+}
+
+:root[data-theme=light] {
+  /* Theme Two (Light) */
+  --main-background: hsl(0, 0%, 90%);
+  --keypad-background: hsl(0, 5%, 81%);
+  --screen-background: hsl(0, 0%, 93%);
+  --toggle-background: hsl(0, 5%, 81%);
+  --toggle: hsl(25, 98%, 40%);
+  --control-key-background: hsl(185, 42%, 37%);
+  --control-key-shadow: hsl(185, 58%, 25%);
+  --equal-key-background: hsl(25, 98%, 40%);
+  --equal-key-shadow: hsl(25, 99%, 27%);
+  --equal-text: hsl(0, 0%, 100%);
+  --button-key-background: hsl(45, 7%, 89%);
+  --button-key-shadow: hsl(35, 11%, 61%);
+  --dark-text: hsl(60, 10%, 19%);
   --white-text: hsl(0, 0%, 100%);
 }
 
