@@ -1,0 +1,7 @@
+@use "../config/colors";
+
+.results {
+  .results--value {
+    background-color: colors.$screen-background;
+  }
+}
