@@ -20,30 +20,17 @@
         <h1 class="calc--title">calc</h1>
         <h3 class="calc--subtitle">THEME</h3>
         <div class="calc--switcher">
-          <input
-            id="theme-1"
-            type="radio"
-            name="theme"
-            checked="checked"
-            class="calc--switcher--input"
-          />
-          <label for="theme-1"></label>
-          <input
-            checked=""
-            id="theme-2"
-            type="radio"
-            name="theme"
-            class="calc--switcher--input"
-          />
-          <label for="theme-2"></label>
-          <input
-            checked=""
-            id="theme-2"
-            type="radio"
-            name="theme"
-            class="calc--switcher--input"
-          />
-          <label for="theme-3"></label>
+          <div class="calc--switcher--label">
+            <label for="theme-1">1</label>
+            <label for="theme-2">2</label>
+            <label for="theme-3">3</label>
+          </div>
+
+          <div class="calc--switcher--input">
+            <input checked id="theme-1" type="radio" name="theme" />
+            <input id="theme-2" type="radio" name="theme" />
+            <input id="theme-3" type="radio" name="theme" />
+          </div>
         </div>
       </article>
       <article class="results">
