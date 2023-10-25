@@ -1,3 +1,15 @@
-@mixin rounded-corner($axis: 5px) {
+@mixin rounded-corner($axis: 6px) {
   border-radius: $axis;
+}
+
+@mixin shadow($color) {
+  $shift-x: 0px;
+  $shift-y: 4px;
+  $blur: 0px;
+  $spread: 0px;
+
+  $axis: $shift-x $shift-y $blur $spread;
+
+  -webkit-box-shadow: $axis $color;
+  box-shadow: $axis $color;
 }
