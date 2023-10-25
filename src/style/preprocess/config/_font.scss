@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
 
-$fontSize: 32px;
-$fontWeight: 700;
-$fontFamily: 'League Spartan', sans-serif;
+$font-size: 32px;
+$font-weight: 700;
+$font-family: "League Spartan", sans-serif;
+
+@mixin letter($size: $font-size) {
+  font: $size $font-family;
+  font-weight: $font-weight;
+}
