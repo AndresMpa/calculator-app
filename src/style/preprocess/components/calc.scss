@@ -20,7 +20,7 @@
 
     margin-left: auto;
     margin-right: 20px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 
     font-size: 8px;
   }
@@ -44,21 +44,46 @@
       justify-content: space-between;
 
       margin: 5px 0px;
-      padding: 2px;
+      padding: 3px;
 
       background-color: colors.$toggle-background;
       @include decorations.rounded-corner(15px);
 
-      & > *,
-      & > *:focus,
-      & > *:checked {
-        border: none;
-        outline: none;
+      & > * {
+        font-size: 0px;
+        margin: 1px;
+      }
 
-        margin: 0px 2px;
+      & > *:after {
+        content: "";
+        visibility: visible;
+        display: inline-block;
 
-        color: colors.$toggle;
+        position: relative;
+        left: -1px;
+        top: -1px;
+
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+
         background-color: colors.$toggle-background;
+      }
+      & > *:checked:after {
+        content: "";
+        visibility: visible;
+        display: inline-block;
+
+        position: relative;
+        left: -1px;
+        top: -1px;
+
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+
+        accent-color: colors.$toggle;
+        background-color: colors.$toggle;
       }
     }
   }
