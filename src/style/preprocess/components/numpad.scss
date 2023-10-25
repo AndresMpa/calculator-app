@@ -1,10 +1,49 @@
+@use "../config/decorations";
 @use "../config/colors";
 
 .numpad {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  grid-template-rows: repeat(4, 5fr);
+  gap: 15px;
+
+  padding: 20px;
+
+  background-color: colors.$keypad-background;
+
+  & > *:nth-last-child(-n + 2) {
+    grid-column-end: span 2;
+    padding: 10px 0;
+  }
+
+  & > *:hover {
+    cursor: pointer;
+    filter: brightness(1.15);
+  }
+
+  & > *,
+  & {
+    border: none;
+    @include decorations.rounded-corner;
+  }
+
   .numpad--button {
+    padding: 10px;
+
+    text-align: center;
+    color: colors.$dark-text;
+    background: colors.$button-key-background;
+    @include decorations.shadow(colors.$button-key-shadow);
   }
   .numpad--control {
+    font-size: 24px;
+    line-height: 20%;
+
+    background: colors.$control-key-background;
+    @include decorations.shadow(colors.$control-key-shadow);
   }
   .numpad--eval {
+    background: colors.$equal-key-background;
+    @include decorations.shadow(colors.$equal-key-shadow);
   }
 }
