@@ -1,7 +1,17 @@
+@use "../config/decorations";
 @use "../config/colors";
 
 .results {
+  display: flex;
+  justify-content: flex-end;
+
+  margin: 15px 0px;
+  padding: 20px;
+
+  color: colors.$white-text;
+  background-color: colors.$screen-background;
+
+  @include decorations.rounded-corner;
   .results--value {
-    background-color: colors.$screen-background;
   }
 }
