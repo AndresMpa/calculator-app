@@ -94,7 +94,7 @@ body {
   justify-content: flex-end;
   margin-left: auto;
   margin-right: 20px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-size: 8px;
 }
 .calc .calc--switcher {
@@ -113,16 +113,38 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 5px 0px;
-  padding: 2px;
+  padding: 3px;
   background-color: var(--toggle-background);
   border-radius: 15px;
 }
-.calc .calc--switcher .calc--switcher--input > *, .calc .calc--switcher .calc--switcher--input > *:focus, .calc .calc--switcher .calc--switcher--input > *:checked {
-  border: none;
-  outline: none;
-  margin: 0px 2px;
-  color: var(--toggle);
+.calc .calc--switcher .calc--switcher--input > * {
+  font-size: 0px;
+  margin: 1px;
+}
+.calc .calc--switcher .calc--switcher--input > *:after {
+  content: "";
+  visibility: visible;
+  display: inline-block;
+  position: relative;
+  left: -1px;
+  top: -1px;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
   background-color: var(--toggle-background);
+}
+.calc .calc--switcher .calc--switcher--input > *:checked:after {
+  content: "";
+  visibility: visible;
+  display: inline-block;
+  position: relative;
+  left: -1px;
+  top: -1px;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  accent-color: var(--toggle);
+  background-color: var(--toggle);
 }
 
 .numpad {
