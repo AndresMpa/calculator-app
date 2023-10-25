@@ -1,12 +1,65 @@
+@use "../config/decorations";
 @use "../config/colors";
 
 .calc {
+  display: flex;
+
+  margin: 60px 0px 10px;
   .calc--title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: 20px;
   }
+
   .calc--subtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    margin-left: auto;
+    margin-right: 20px;
+    margin-bottom: 8px;
+
+    font-size: 8px;
   }
+
   .calc--switcher {
+    display: flex;
+    flex-direction: column;
+
+    .calc--switcher--label {
+      display: flex;
+      justify-content: space-around;
+
+      & > * {
+        font-size: 10px;
+        text-align: right;
+      }
+    }
+
     .calc--switcher--input {
+      display: flex;
+      justify-content: space-between;
+
+      margin: 5px 0px;
+      padding: 2px;
+
+      background-color: colors.$toggle-background;
+      @include decorations.rounded-corner(15px);
+
+      & > *,
+      & > *:focus,
+      & > *:checked {
+        border: none;
+        outline: none;
+
+        margin: 0px 2px;
+
+        color: colors.$toggle;
+        background-color: colors.$toggle-background;
+      }
     }
   }
 }
