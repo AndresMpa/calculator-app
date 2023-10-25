@@ -1,0 +1,3 @@
+@mixin rounded-corner($axis: 5px) {
+  border-radius: $axis;
+}
