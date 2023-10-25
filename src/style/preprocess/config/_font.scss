@@ -4,7 +4,8 @@ $font-size: 32px;
 $font-weight: 700;
 $font-family: "League Spartan", sans-serif;
 
-@mixin letter($size: $font-size) {
+@mixin letter($letter-color, $size: $font-size) {
   font: $size $font-family;
   font-weight: $font-weight;
+  color: $letter-color;
 }
