@@ -1,9 +1,12 @@
 @use "../config/colors";
+@use "../config/font";
 
 * {
   margin: 0%;
   padding: 0%;
   overflow-anchor: none;
+
+  @include font.letter(colors.$white-text);
 }
 
 ul,
