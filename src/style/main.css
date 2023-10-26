@@ -191,11 +191,21 @@ body {
 .results {
   display: flex;
   justify-content: flex-end;
+  max-width: 365px;
   margin: 15px 0px;
   padding: 20px;
   color: var(--white-text);
   background-color: var(--screen-background);
   border-radius: 6px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-x: auto;
+}
+.results::-webkit-scrollbar {
+  display: none;
+}
+.results .results--value {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
