@@ -2,55 +2,64 @@
 :root {
   /* Default theme (dark) */
   --main-background: hsl(222, 26%, 31%);
-  --keypad-background: hsl(223, 31%, 20%);
+  --label-text: hsl(221, 14%, 31%);
+  --base-text: hsl(0, 0%, 100%);
   --screen-background: hsl(224, 36%, 15%);
+  --screen-text: hsl(224, 36%, 15%);
   --toggle-background: hsl(223, 31%, 20%);
   --toggle: hsl(6, 63%, 50%);
+  --keypad-background: hsl(223, 31%, 20%);
+  --keypad-text: hsl(223, 31%, 20%);
   --control-key-background: hsl(225, 21%, 49%);
   --control-key-shadow: hsl(224, 28%, 35%);
+  --control-text: hsl(0, 0%, 100%);
   --equal-key-background: hsl(6, 63%, 50%);
   --equal-key-shadow: hsl(6, 70%, 34%);
   --equal-text: hsl(0, 0%, 100%);
   --button-key-background: hsl(30, 25%, 89%);
   --button-key-shadow: hsl(28, 16%, 65%);
-  --dark-text: hsl(221, 14%, 31%);
-  --white-text: hsl(0, 0%, 100%);
 }
 
 :root[data-theme=light] {
   /* Theme Two (Light) */
   --main-background: hsl(0, 0%, 90%);
-  --keypad-background: hsl(0, 5%, 81%);
+  --label-text: hsl(0, 0%, 100%);
+  --base-text: hsl(60, 10%, 19%);
   --screen-background: hsl(0, 0%, 93%);
+  --screen-text: hsl(60, 10%, 19%);
   --toggle-background: hsl(0, 5%, 81%);
   --toggle: hsl(25, 98%, 40%);
+  --keypad-background: hsl(0, 5%, 81%);
+  --keypad-text: hsl(60, 10%, 19%);
   --control-key-background: hsl(185, 42%, 37%);
   --control-key-shadow: hsl(185, 58%, 25%);
+  --control-text: hsl(0, 0%, 100%);
   --equal-key-background: hsl(25, 98%, 40%);
   --equal-key-shadow: hsl(25, 99%, 27%);
   --equal-text: hsl(0, 0%, 100%);
   --button-key-background: hsl(45, 7%, 89%);
   --button-key-shadow: hsl(35, 11%, 61%);
-  --dark-text: hsl(60, 10%, 19%);
-  --white-text: hsl(0, 0%, 100%);
 }
 
 :root[data-theme=retro] {
   /* Theme Three (retro) */
   --main-background: hsl(268, 75%, 9%);
-  --keypad-background: hsl(268, 71%, 12%);
+  --label-text: hsl(0, 0%, 100%);
+  --base-text: hsl(52, 100%, 62%);
   --screen-background: hsl(268, 71%, 12%);
+  --screen-text: hsl(0, 0%, 100%);
   --toggle-background: hsl(268, 71%, 12%);
   --toggle: hsl(176, 100%, 44%);
+  --keypad-background: hsl(268, 71%, 12%);
+  --keypad-text: hsl(52, 100%, 62%);
   --control-key-background: hsl(281, 89%, 26%);
   --control-key-shadow: hsl(285, 91%, 52%);
+  --control-text: hsl(0, 0%, 100%);
   --equal-key-background: hsl(176, 100%, 44%);
   --equal-key-shadow: hsl(177, 92%, 70%);
-  --equal-text: hsl(52, 100%, 62%);
+  --equal-text: hsl(198, 20%, 13%);
   --button-key-background: hsl(268, 47%, 21%);
   --button-key-shadow: hsl(290, 70%, 36%);
-  --dark-text: hsl(198, 20%, 13%);
-  --white-text: hsl(0, 0%, 100%);
 }
 
 * {
@@ -59,7 +68,7 @@
   overflow-anchor: none;
   font: 32px "League Spartan", sans-serif;
   font-weight: 700;
-  color: var(--white-text);
+  color: var(--base-text);
 }
 
 ul,
@@ -153,6 +162,7 @@ body {
   grid-template-rows: repeat(4, 5fr);
   gap: 15px;
   padding: 20px;
+  color: var(--keypad-text);
   background-color: var(--keypad-background);
 }
 .numpad > *:nth-last-child(-n+2) {
@@ -170,7 +180,7 @@ body {
 .numpad .numpad--button {
   padding: 10px;
   text-align: center;
-  color: var(--dark-text);
+  color: var(--keypad-text);
   background: var(--button-key-background);
   -webkit-box-shadow: 0px 4px 0px 0px var(--button-key-shadow);
   box-shadow: 0px 4px 0px 0px var(--button-key-shadow);
@@ -178,11 +188,13 @@ body {
 .numpad .numpad--control {
   font-size: 24px;
   line-height: 20%;
+  color: var(--control-text);
   background: var(--control-key-background);
   -webkit-box-shadow: 0px 4px 0px 0px var(--control-key-shadow);
   box-shadow: 0px 4px 0px 0px var(--control-key-shadow);
 }
 .numpad .numpad--eval {
+  color: var(--equal-text);
   background: var(--equal-key-background);
   -webkit-box-shadow: 0px 4px 0px 0px var(--equal-key-shadow);
   box-shadow: 0px 4px 0px 0px var(--equal-key-shadow);
@@ -194,7 +206,7 @@ body {
   max-width: 365px;
   margin: 15px 0px;
   padding: 20px;
-  color: var(--white-text);
+  color: var(--screen-text);
   background-color: var(--screen-background);
   border-radius: 6px;
   -ms-overflow-style: none;

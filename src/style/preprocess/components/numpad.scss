@@ -9,6 +9,7 @@
 
   padding: 20px;
 
+  color: colors.$keypad-text;
   background-color: colors.$keypad-background;
 
   & > *:nth-last-child(-n + 2) {
@@ -31,7 +32,7 @@
     padding: 10px;
 
     text-align: center;
-    color: colors.$dark-text;
+    color: colors.$keypad-text;
     background: colors.$button-key-background;
     @include decorations.shadow(colors.$button-key-shadow);
   }
@@ -39,10 +40,12 @@
     font-size: 24px;
     line-height: 20%;
 
+    color: colors.$control-text;
     background: colors.$control-key-background;
     @include decorations.shadow(colors.$control-key-shadow);
   }
   .numpad--eval {
+    color: colors.$equal-text;
     background: colors.$equal-key-background;
     @include decorations.shadow(colors.$equal-key-shadow);
   }
