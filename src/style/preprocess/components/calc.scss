@@ -1,3 +1,4 @@
+@use "../config/breakPoints";
 @use "../config/decorations";
 @use "../config/colors";
 
@@ -6,9 +7,6 @@
 
   margin: 60px 0px 10px;
 
-  * > {
-    color: colors.$screen-text;
-  }
   .calc--title {
     display: flex;
     flex-direction: column;
