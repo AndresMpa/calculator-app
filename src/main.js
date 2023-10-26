@@ -14,14 +14,8 @@ themeThree.addEventListener("change", (event) =>
   switchTheme(event.target.value),
 );
 
-numpad.addEventListener("click", (event) => {
-  console.log(event.target.value)
-  
-  registerCalc(event.target.textContent, screen);
-});
+numpad.addEventListener("click", (event) =>
+  registerCalc(event.target.value, screen),
+);
 
-window.addEventListener("keydown", (event) => {
-  console.log(event.key);
-
-  registerCalc(event.key, screen);
-});
+window.addEventListener("keydown", (event) => registerCalc(event.key, screen));
