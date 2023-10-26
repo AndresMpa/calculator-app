@@ -1,2 +1,12 @@
 $desktop: 1440px;
 $mobile: 375px;
+
+@mixin overflow {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
