@@ -29,7 +29,7 @@ const operation = {
       : (string += "-");
     floatingPoint = true;
   },
-  x: () => {
+  "*": () => {
     string === "" || !isFinite(string.charAt(string.length - 1))
       ? (string = string)
       : (string += "*");
@@ -52,10 +52,10 @@ const operation = {
   "=": () => {
     string = `${eval(string)}`;
   },
-  del: () => {
+  backspace: () => {
     string = string.slice(0, -1);
   },
-  reset: () => (string = ""),
+  delete: () => (string = ""),
 };
 
 const registerCalc = (value, target) => {
